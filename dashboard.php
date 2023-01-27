@@ -4,7 +4,6 @@
     include('sess_config/session_data.php');
     include('includes/error_reporting.php');
     include('Classes/dbFunctions.php');
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
