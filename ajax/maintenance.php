@@ -46,7 +46,7 @@
             $update = $functionObj->updateItem($record_id, $item_code, $item_quantity, $item_description, $item_name, $user_id);
             echo $update;
             die();
-        }elseif($type == "DELETE") { //Update existing item.
+        }elseif($type == "DELETE") { //Delete existing item.
             $user_id = base64_decode($_SESSION['id']);
             $record_id = $_POST['uid'];
 
