@@ -7,7 +7,7 @@ class dbFunctions {
         $dbObj = new databaseConnect();
         $connection = $dbObj->openDBConn();
         //Update User Login History
-        $strupdt = "update willatoc_system.login_history set number_of_logins = number_of_logins + 1, last_logged_in = NOW() 
+        $strupdt = "update login_history set number_of_logins = number_of_logins + 1, last_logged_in = NOW() 
                     where user_id = '$uid' limit 1";
         $connection->query($strupdt);
         return 1;
@@ -171,7 +171,7 @@ class dbFunctions {
         };
 
         //Delete Query
-        $delete = "update willatoc_system.item_management 
+        $delete = "update item_management 
                    set item_status = 0, added_by = '$user_id'
                    where id = '$rid' limit 1";
         $connection->query($delete);
@@ -191,7 +191,7 @@ class dbFunctions {
             return "Could not connect to host.";
         };
 
-        $query = "select * from willatoc_system.item_management where item_status = 1 order by id";
+        $query = "select * from item_management where item_status = 1 order by id";
         $stmt = $connection->query($query);
         if($stmt){
         }else{
