@@ -4,8 +4,7 @@
         RoomRaccoon Technical Assessment by William Madede
         ===========================================================
         Author: William Madede
-        Project: RoomRaccoon Technical Assessment
-
+        
         You may not copy, alter or distribute this code without
         the express permission from the author.
         ===========================================================
